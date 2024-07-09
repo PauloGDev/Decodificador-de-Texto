@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <main class="main">
+        <header class="main__header">
+            <ul class="main__avatar">
+                <li class="main__item">
+                    <a class="is-icon-black main__link"  target="_blank">
+                        <img class="main__image" src="./assets/logo.svg" alt="Icone do Site" href="">
+                    </a>
+                </li>
+                <li class="main__item">
+                    <a class="is-icon-black main__link"  target="_blank" href="https://www.linkedin.com/in/paulo-oliveira-9932912b5/">
+                        <img class="main__image" src="./assets/linkedin.svg" alt="Icone do Linkedin">
+                    </a>
+                </li>
+                <li class="main__item">
+                    <a class="is-icon-black main__link" href="https://github.com/danieldemoura/Challenge-ONE-Sprint-01" target="_blank">
+                        <img class="main__image " src="./assets/github.svg" alt="Icone do GitHub">
+                    </a>
+                </li>
+               
+            </ul>
+            <button class="main__button is-btn-small js-btn-fullscreen" type="button">
+                <img class="is-icon-svg is-icon-white js-img-fullscreen" src="./assets/fullscreen.png" alt="Imagem representando um botão Full Screen">
+            </button>
+        </header>
+        <div class="main__content">
+            <div class="main__warning">
+                <img class="is-icon-warning is-icon-white" src="./assets/warning.svg" alt="Imagem de um circulo com um ponto de exclamação">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="main__wrapper-textarea">
+                <textarea class="main__textarea js-textarea" placeholder="Digite o seu texto!"></textarea>
+            </div>
+            <div class="main__wrapper-button">
+                <button class="is-button-large is-encrypt js-encrypt" type="button">
+                    Criptografar
+                </button>
+                <button class="is-button-large is-descrypt js-descrypt" type="button">
+                    Descriptografar
+                </button>
+            </div>
+        </main>
+    </main>
+    <aside class="aside">
+        <header class="aside__header">
+            <input class="aside__checkbox js-checkbox" id="checkbox" type="checkbox" name="checkbox">
+            <div class="aside__button-toggle">
+                <img class="aside__icon-theme is-icon-white is-moon" src="./assets/moon.svg" alt="Icone da Lua">
+                <img class="aside__icon-theme is-icon-black" src="./assets/sun.svg" alt="Icone do Sol">
+                <label for="checkbox" class="aside__circle js-btn-toggle"></label>
+            </div>
+        </header>
+        <section class="aside__display">
+            <div class="aside__display-text  js-display-text">
+                <div class="aside__image" >
+                    <img src="./assets/not-found.svg" alt="Imagem ilustrativa">
+                </div>
+                <div class="aside__message">
+                    <h2 class="aside__title">Nenhuma mensagem encontrada</h2>
+                    <p class="aside__paragraph">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+            <button class="aside__copy is-button-large is-button-copy js-btn-copy" type="button">
+                <img class="is-icon-black" src="./assets/copy.svg" alt="Imagem de uma prancheta">
+                Copiar
+            </button>
+        </section>
+    </aside>
+
+    <script src="./script.js"></script>
+</body>
+</html>
